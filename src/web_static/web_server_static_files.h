@@ -19,7 +19,6 @@
 #include "web_server.wifi_signal_3.svg.h"
 #include "web_server.wifi_signal_4.svg.h"
 #include "web_server.wifi_signal_5.svg.h"
-#include "web_server.zones.json.h"
 StaticFile staticFiles[] = {
   { "/assets.js", CONTENT_ASSETS_JS, sizeof(CONTENT_ASSETS_JS) - 1, _CONTENT_TYPE_JS, CONTENT_ASSETS_JS_ETAG },
   { "/emoncms.jpg", CONTENT_EMONCMS_JPG, sizeof(CONTENT_EMONCMS_JPG) - 1, _CONTENT_TYPE_JPEG, CONTENT_EMONCMS_JPG_ETAG },
@@ -42,5 +41,4 @@ StaticFile staticFiles[] = {
   { "/wifi_signal_3.svg", CONTENT_WIFI_SIGNAL_3_SVG, sizeof(CONTENT_WIFI_SIGNAL_3_SVG) - 1, _CONTENT_TYPE_SVG, CONTENT_WIFI_SIGNAL_3_SVG_ETAG },
   { "/wifi_signal_4.svg", CONTENT_WIFI_SIGNAL_4_SVG, sizeof(CONTENT_WIFI_SIGNAL_4_SVG) - 1, _CONTENT_TYPE_SVG, CONTENT_WIFI_SIGNAL_4_SVG_ETAG },
   { "/wifi_signal_5.svg", CONTENT_WIFI_SIGNAL_5_SVG, sizeof(CONTENT_WIFI_SIGNAL_5_SVG) - 1, _CONTENT_TYPE_SVG, CONTENT_WIFI_SIGNAL_5_SVG_ETAG },
-  { "/zones.json", CONTENT_ZONES_JSON, sizeof(CONTENT_ZONES_JSON) - 1, _CONTENT_TYPE_JSON, CONTENT_ZONES_JSON_ETAG },
 };

@@ -430,7 +430,7 @@ void EvseMonitor::getStatusFromEvse()
 
 void EvseMonitor::getChargeCurrentAndVoltageFromEvse()
 {
-  if(_state.isCharging())
+  //if(_state.isCharging())
   {
     DBUGLN("Get charge current/voltage status");
     _openevse.getChargeCurrentAndVoltage([this](int ret, double a, double volts)
@@ -445,9 +445,9 @@ void EvseMonitor::getChargeCurrentAndVoltageFromEvse()
         _data_ready.ready(EVSE_MONITOR_AMP_AND_VOLT_DATA_READY);
       }
     });
-  } else {
-    _data_ready.ready(EVSE_MONITOR_AMP_AND_VOLT_DATA_READY);
-  }
+  } //else {
+//    _data_ready.ready(EVSE_MONITOR_AMP_AND_VOLT_DATA_READY);
+//  }
 }
 
 void EvseMonitor::getTemperatureFromEvse()
@@ -502,4 +502,3 @@ void EvseMonitor::getEnergyFromEvse()
     _data_ready.ready(EVSE_MONITOR_ENERGY_DATA_READY);
   }
 }
-
