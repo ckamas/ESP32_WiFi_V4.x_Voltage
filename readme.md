@@ -1,3 +1,6 @@
+Updated to use voltage provided by evse modifications. also constantly read voltage from evse too.
+
+
 # OpenEVSE WiFi ESP32 Gateway v4
 
 > **_NOTE:_** Breaking change! This release reccomends a minimum of [7.1.3](https://github.com/OpenEVSE/open_evse/releases) of the OpenEVSE firmware, features including Solar Divert and push button menus may not behave as expected on older firmware.
